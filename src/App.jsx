@@ -21,10 +21,13 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />}></Route>
 					<Route path="/about" element={<About />}></Route>
-					<Route path="/product" element={<Product />}></Route>
-					<Route path="/product/create" element={<CreateProduct />}></Route>
-					<Route path="/product/details" element={<ProductDetails />}></Route>
-					<Route path="/product/list" element={<ProductList />}></Route>
+          {/* nesting routes for the product components */}
+          <Route path="product">
+					<Route path="" element={<Product />}></Route>
+					<Route path="create" element={<CreateProduct />}></Route>
+					<Route path="details" element={<ProductDetails />}></Route>
+					<Route path="list" element={<ProductList />}></Route>
+          </Route>
 				</Routes>
 			</BrowserRouter>
 		</>
