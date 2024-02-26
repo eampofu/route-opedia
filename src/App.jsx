@@ -10,6 +10,7 @@ import ProductDetails from "./Components/ProductDetails";
 import ProductList from "./Components/ProductList";
 import Product from "./Components/Product";
 import CreateProduct from "./Components/CreateProduct";
+import NotFound from "./Components/NotFound";
 
 function App() {
 	const [count, setCount] = useState(0);
@@ -28,6 +29,8 @@ function App() {
 					<Route path="details" element={<ProductDetails />}></Route>
 					<Route path="list" element={<ProductList />}></Route>
           </Route>
+          {/* always put this in the global and not in nested */}
+          <Route path="*" element={<NotFound/>}></Route>
 				</Routes>
 			</BrowserRouter>
 		</>
