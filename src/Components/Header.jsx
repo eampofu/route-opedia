@@ -43,25 +43,30 @@ function Header() {
 									data-bs-toggle="dropdown"
 									aria-expanded="false"
 								>
-									Dropdown
+									Product
 								</Link>
 								<ul className="dropdown-menu">
 									<li>
-										<Link className="dropdown-item" href="#">
-											Action
+										<Link className="dropdown-item" to="/product">
+											Product
 										</Link>
 									</li>
 									<li>
-										<Link className="dropdown-item" href="#">
-											Another action
+										<Link className="dropdown-item" to="product/list">
+											Product List
 										</Link>
 									</li>
 									<li>
 										<hr className="dropdown-divider" />
 									</li>
+                                    <li>
+										<Link className="dropdown-item" to="product/create">
+											Product Create
+										</Link>
+									</li>
 									<li>
-										<Link className="dropdown-item" href="#">
-											Something else here
+										<Link className="dropdown-item" to="product/details">
+											Product Details
 										</Link>
 									</li>
 								</ul>
