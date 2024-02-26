@@ -31,6 +31,11 @@ function Header() {
 								</Link>
 							</li>
 							<li className="nav-item">
+								<Link className="nav-link" to="cryptodetail">
+									Crypto Detail
+								</Link>
+							</li>
+							<li className="nav-item">
 								<Link className="nav-link" to="about">
 									About
 								</Link>
@@ -59,7 +64,7 @@ function Header() {
 									<li>
 										<hr className="dropdown-divider" />
 									</li>
-                                    <li>
+									<li>
 										<Link className="dropdown-item" to="product/create">
 											Product Create
 										</Link>
