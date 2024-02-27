@@ -12,3 +12,7 @@ this project shows how to use the following-:
 - Link
 - useNavigate
 - Navigate 
+
+## Usage 
+
+yo can download the repo. using the terminal type  `cd route-opedia` to navigate into the folder. type `npm i` to install the packages. to test type `npm run dev` then click the url listed in the terminal
